@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // alert(" bhaya vasthaknaya huyaa")
+      // document.write('sachinn gym rat')
+      function add() {
+        var n1 = parseInt(document.getElementById("num1").value);
+        var n2 = parseInt(document.getElementById("num2").value);
+        // var n3 = parseInt(document.getElementById("num3").value);
+        console.log(n1 + n2);
+        var sum = n1 + n2;
+        var div = n1 / n2;
+        var multi = n1*n2;
+        var sub = n1 - n2;
+        document.getElementById("res").value = sum;
+        document.getElementById("res").value = multi;
+        document.getElementById("res").value = div;
+        document.getElementById("res").value = sub;
+        return false;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- <h1>goood morning</h1> -->
+    <!-- <label for="">enter num1</label>
+    <input type="text" placeholder="enter num only" id="num1">
+    <label for="">enter num2</label>
+    <input type="text" placeholder="enter num only" id="num2">
+    <button onclick="addtwo()">Add</button> -->
+
+    
+      <label for="">enter num1</label>
+      <input type="text" placeholder="enter num only" id="num1" /><br>
+      <label for="">enter num2</label>
+      <input type="text" placeholder="enter num only" id="num2" /><br>
+      <!-- <label for="">enter num3</label>
+      <input type="text" placeholder="enter num only" id="num3" /><br> -->
+      <input type="submit" value="display" /><br>
+      <label>Result</label>
+      <input type="text" id="res" readonly /><br />
+      
+      <button onclick="substract()">substarct</button>
+      <button onclick="multiplication()">multiplication</button>
+      <button onclick="division()">division</button>
+
+    
+  </body>
+</html>
